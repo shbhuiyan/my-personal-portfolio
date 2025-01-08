@@ -8,8 +8,8 @@ import StairEffect from "@/components/StairEffect/StairEffect";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight:["100" , "200" ,  "300" , "400" , "500" , "600" , "700" , "800"],
-  variable: '--font-jetBrainsMono'
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-jetBrainsMono",
 });
 
 export const metadata = {
@@ -20,14 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={jetBrainsMono.variable}
-      >
+      <body className={jetBrainsMono.variable}>
         <Header />
         <StairEffect />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <PageTransition> {children} </PageTransition>
       </body>
     </html>
   );
