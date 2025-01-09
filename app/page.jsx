@@ -1,3 +1,4 @@
+import MyPhoto from "@/components/Photo/MyPhoto";
 import Social from "@/components/Social/Social";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
@@ -6,7 +7,7 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between lg:pt-8 lg:pb-20">
           {/* Text for banner */}
           <div className="text-center lg:text-left">
             <span className="text-xl">Frontend Web Developer</span>
@@ -31,7 +32,9 @@ const Home = () => {
           </div>
 
           {/* photo for banner */}
-          <div className="">image</div>
+          <div className="my-8 lg:my-0">
+            <MyPhoto />
+          </div>
         </div>
       </div>
     </section>
