@@ -1,9 +1,10 @@
 "use client";
 import Social from "@/components/Social/Social";
 import { Button } from "@/components/ui/button";
-import MyPhoto from "@/Layouts/Home/Photo/MyPhoto";
 import { FiDownload } from "react-icons/fi";
 import CountUp from "react-countup";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const stats = [
   {
@@ -29,6 +30,7 @@ const Home = () => {
     <section className="h-full">
       <div className="container mx-auto">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between lg:pt-8 lg:pb-20">
+
           {/* Text for banner */}
           <div className="text-center lg:text-left">
             <span className="text-xl">Frontend Web Developer</span>
@@ -59,30 +61,59 @@ const Home = () => {
 
           {/* photo for banner */}
           <div className="my-8 lg:my-0">
-            <MyPhoto />
+            <div className="w-full h-full relative">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { delay: 2, duration: 0.5, ease: "easeIn" },
+                }}
+              >
+                <div className="w-[298px] h-[298px] xl:w-[420px] xl:h-[420px] ring-8 ring-accent rounded-full">
+                  <Image
+                    src="/assets/My-Profile.png"
+                    priority
+                    quality={100}
+                    fill
+                    alt="sakhawat;s image"
+                    className="object-contain"
+                  />
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* stats */}
       <div className="pt-4 pb-12 lg:pt-20">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto lg:max-w-none">
-          {stats.map((item, i) => {
-            return (
-              <div className="flex-1 flex gap-4 items-center justify-center lg:justify-start" key={i}>
-                <CountUp
-                  end={item.num}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl lg:text-6xl font-extrabold"
-                />
-                <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`} > {item.text} </p>
-              </div>
-            );
-          })}
+        <div className="container mx-auto">
+          <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto lg:max-w-none">
+            {stats.map((item, i) => {
+              return (
+                <div
+                  className="flex-1 flex gap-4 items-center justify-center lg:justify-start"
+                  key={i}
+                >
+                  <CountUp
+                    end={item.num}
+                    duration={5}
+                    delay={2}
+                    className="text-4xl lg:text-6xl font-extrabold"
+                  />
+                  <p
+                    className={`${
+                      item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
+                    } leading-snug text-white/80`}
+                  >
+                    {" "}
+                    {item.text}{" "}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
