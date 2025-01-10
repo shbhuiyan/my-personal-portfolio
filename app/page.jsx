@@ -1,7 +1,28 @@
-import MyPhoto from "@/components/Photo/MyPhoto";
+"use client";
 import Social from "@/components/Social/Social";
 import { Button } from "@/components/ui/button";
+import MyPhoto from "@/Layouts/Home/Photo/MyPhoto";
 import { FiDownload } from "react-icons/fi";
+import CountUp from "react-countup";
+
+const stats = [
+  {
+    num: 0,
+    text: "Years of experience",
+  },
+  {
+    num: 22,
+    text: "Projects Completed",
+  },
+  {
+    num: 8,
+    text: "Technologies learned",
+  },
+  {
+    num: 500,
+    text: "Code Commits",
+  },
+];
 
 const Home = () => {
   return (
@@ -12,15 +33,21 @@ const Home = () => {
           <div className="text-center lg:text-left">
             <span className="text-xl">Frontend Web Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Sakhawat Hossen</span>
+              Hello I'm <br />{" "}
+              <span className="text-accent">Sakhawat Hossen</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I'm a passionate Frontend Web Developer specializing in React.js, JavaScript, and responsive design.
+              I'm a passionate Frontend Web Developer specializing in React.js,
+              JavaScript, and responsive design.
             </p>
 
             {/* btn and social */}
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="lg"
+                className="uppercase flex items-center gap-2"
+              >
                 <span>Download Resume</span>
                 <FiDownload />
               </Button>
@@ -28,7 +55,6 @@ const Home = () => {
                 <Social />
               </div>
             </div>
-
           </div>
 
           {/* photo for banner */}
@@ -36,6 +62,27 @@ const Home = () => {
             <MyPhoto />
           </div>
         </div>
+      </div>
+
+      {/* stats */}
+      <div className="pt-4 pb-12 lg:pt-20">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto lg:max-w-none">
+          {stats.map((item, i) => {
+            return (
+              <div className="flex-1 flex gap-4 items-center justify-center lg:justify-start" key={i}>
+                <CountUp
+                  end={item.num}
+                  duration={5}
+                  delay={2}
+                  className="text-4xl lg:text-6xl font-extrabold"
+                />
+                <p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`} > {item.text} </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
       </div>
     </section>
   );
