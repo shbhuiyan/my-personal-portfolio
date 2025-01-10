@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const MyPhoto = () => {
   return (
@@ -13,11 +12,9 @@ const MyPhoto = () => {
         }}
       >
         <div className="w-[298px] h-[298px] xl:w-[420px] xl:h-[420px] ring-8 ring-accent rounded-full">
-          <Image
-            src="/assets/My-Profile.png"
-            priority
+          <img
+            src="https://i.ibb.co.com/fCcjwk0/My-Profile.png"
             quality={100}
-            fill
             alt="sakhawat;s image"
             className="object-contain"
           />

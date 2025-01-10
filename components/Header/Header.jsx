@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Nav from "../Nav/Nav";
 import MobileNav from "../Nav/MobileNav";
+import { FiDownload } from "react-icons/fi";
 
 
 const Header = () => {
@@ -16,9 +17,12 @@ const Header = () => {
                 {/* nav for Desktop */}
                 <div className="hidden lg:flex items-center gap-8">
                     <Nav />
-                    <Link href="/pages/contact">
-                        <Button>Hire Me</Button>
-                    </Link>
+                    <a>
+                        <Button className="space-x-2">
+                            <span>Resume</span>
+                            <FiDownload />
+                        </Button>
+                    </a>
                 </div>
 
                 {/* Mobile Nav */}
