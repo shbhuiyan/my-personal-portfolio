@@ -45,6 +45,7 @@ const Home = () => {
 
             {/* btn and social */}
             <div className="flex flex-col lg:flex-row items-center gap-6">
+              <a href="resume.pdf" download="Resume_of_Sakhawat_Hossen.pdf">
               <Button
                 variant="outline"
                 size="lg"
@@ -53,6 +54,7 @@ const Home = () => {
                 <span>Download Resume</span>
                 <FiDownload />
               </Button>
+              </a>
               <div className="mb-8 lg:mb-0">
                 <Social />
               </div>

@@ -59,7 +59,7 @@ const MobileNav = () => {
               {link.name}{" "}
             </Link>
           ))}
-          <a>
+          <a href="resume.pdf" download="Resume_of_Sakhawat_Hossen.pdf">
             <Button className="space-x-2">
               <span>Resume</span>
               <FiDownload />
