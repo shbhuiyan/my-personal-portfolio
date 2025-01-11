@@ -45,7 +45,7 @@ const projects = [
   },
   {
     id: "03",
-    projectImage: "https://i.ibb.co.com/1ncLSbg/a10.png",
+    projectImage: "https://i.ibb.co.com/fDyWpJq/Screenshot-from-2025-01-11-20-26-48.png",
     projectName: "Sports Equipment Store",
     technologies: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     liveLink: "https://sports-hub-a-10-in-ph.netlify.app",
@@ -108,7 +108,7 @@ const Projects = () => {
               {/* Button */}
               <div className="flex items-center gap-4">
                 {/* Live Preview */}
-                <Link href={`${project?.liveLink}`}>
+                <Link href={`${project?.liveLink}`} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -122,7 +122,7 @@ const Projects = () => {
                 </Link>
 
                 {/* Github Preview */}
-                <Link href={`${project.githubLink}`}>
+                <Link href={`${project.githubLink}`} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -141,7 +141,8 @@ const Projects = () => {
           {/* right side */}
           <div className="w-full xl:w-[50%]">
             <Swiper
-            navigation={true} modules={[Navigation]}
+            navigation={true}
+             modules={[Navigation]}
               spaceBetween={30}
               slidesPerView={1}
               onSlideChange={handleSlideChange}

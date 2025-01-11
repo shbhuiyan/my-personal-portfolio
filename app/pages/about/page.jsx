@@ -163,7 +163,7 @@ const About = () => {
                             <div className="flex flex-col gap-[30px] text-center lg:text-left">
                                 <h3 className="text-4xl font-bold"> {educations.title} </h3>
                                 <p className="max-w-[600px] mx-auto lg:mx-0 text-white/60"> {educations.description} </p>
-                                <ScrollArea className="h-[300px] lg:h-[200px]">
+                                <ScrollArea className="h-[300px]">
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                                         {
                                             educations.info.map((item , i) => {
