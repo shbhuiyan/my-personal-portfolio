@@ -1,0 +1,68 @@
+[
+    {
+      "id": "01",
+      "projectImage": "https://i.ibb.co.com/syd76Wd/Screenshot-from-2025-01-11-15-29-26.png",
+      "projectName": "My personal portfolio",
+      "projectsTitle": "A reflection of my professional journey and skills as a frontend web developer.",
+      "technologies": [
+        "React",
+        "Next.Js",
+        "chadcn/ui",
+        "JavaScript",
+        "TailwindCss"
+      ],
+      "liveLink": "https://sakhawat-h.netlify.app",
+      "githubLink": "https://github.com/shbhuiyan/my-personal-portfolio",
+      "details": "This is my personal portfolio, a reflection of my professional journey and skills as a frontend web developer. It represents my passion for creating dynamic, responsive, and user-centric web solutions."
+    },
+    {
+      "id": "02",
+      "projectImage": "https://i.ibb.co.com/Df73840/a-9.png",
+      "projectName": "Career Counseling Platform",
+      "projectsTitle": "Personalized Career Guidance and Resources",
+      "technologies": [
+        "React",
+        "Node.Js",
+        "Express",
+        "MongoDB",
+        "Tailwind"
+      ],
+      "liveLink": "https://my-career-hub-assignment-in-ph.netlify.app",
+      "githubLink": "https://github.com/shbhuiyan/assignment9-in-ph",
+      "details": "A platform that provides personalized career guidance and resources, helping users make informed professional decisions."
+    },
+    {
+      "id": "03",
+      "projectImage": "https://i.ibb.co.com/rfYY2fG/a-10.png",
+      "projectName": "Sports Equipment Store",
+      "projectsTitle": "Responsive Sports E-commerce Website",
+      "technologies": [
+        "React",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Tailwind"
+      ],
+      "liveLink": "https://sports-hub-a-10-in-ph.netlify.app",
+      "githubLink": "https://github.com/shbhuiyan/assignment10-client-side-in-ph",
+      "details": "An e-commerce website for browsing and purchasing sports equipment with user authentication and product management features."
+    },
+    {
+      "id": "04",
+      "projectImage": "https://i.ibb.co.com/7vff9fd/a-11.png",
+      "projectName": "Product Recommendation Platform",
+      "projectsTitle": "Collaborative Query and Recommendation System",
+      "technologies": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Tailwind",
+        "JWT",
+        "Node.Js"
+      ],
+      "liveLink": "https://b-10-a11-ask-me-queries.netlify.app",
+      "githubLink": "https://github.com/shbhuiyan/assisgnment11-client-side-in-ph",
+      "details": "A platform allowing users to manage their own queries and recommendations, featuring secure login and responsive design."
+    }
+  ]
+  
