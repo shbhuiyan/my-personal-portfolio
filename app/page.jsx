@@ -53,7 +53,7 @@ const Home = () => {
 
             {/* btn and social */}
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              <a href="resume.pdf" download="Resume_of_Sakhawat_Hossen.pdf">
+              <a href="Resume of Sakhawat.pdf" download="Resume of Sakhawat.pdf">
               <Button
                 variant="outline"
                 size="lg"

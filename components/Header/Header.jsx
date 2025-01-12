@@ -17,7 +17,7 @@ const Header = () => {
                 {/* nav for Desktop */}
                 <div className="hidden lg:flex items-center gap-8">
                     <Nav />
-                    <a href="resume.pdf" download="Resume_of_Sakhawat_Hossen.pdf">
+                    <a href="Resume of Sakhawat.pdf" download="Resume of Sakhawat.pdf">
                         <Button className="space-x-2">
                             <span>Resume</span>
                             <FiDownload />
