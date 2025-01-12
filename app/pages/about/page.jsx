@@ -31,7 +31,7 @@ const aboutMe = {
         },
         {
             fieldName: "Location",
-            fieldValue: "Feni,Chattogram,Bangladesh.",
+            fieldValue: "Feni,Bangladesh.",
         },
         {
             fieldName: "Languages",

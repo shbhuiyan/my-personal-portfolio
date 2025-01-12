@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import CountUp from "react-countup";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 const stats = [
   {
@@ -33,7 +34,11 @@ const Home = () => {
 
           {/* Text for banner */}
           <div className="text-center lg:text-left">
-            <span className="text-xl">Frontend Web Developer</span>
+            <span className="text-xl">
+
+              <Typewriter words={['Frontend web Developer', 'Fullstack web Developer', 'JavaScript web Developer', 'React web Developer']} loop={0} cursor cursorStyle='|' typeSpeed={80} deleteSpeed={50} delaySpeed={1500} />
+
+            </span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
               <span className="text-accent">Sakhawat Hossen</span>

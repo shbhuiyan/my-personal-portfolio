@@ -19,7 +19,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Chittagong,Bangladesh.",
+    description: "Feni,Bangladesh.",
   },
 ];
 
