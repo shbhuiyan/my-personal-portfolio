@@ -33,7 +33,10 @@ const Home = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between lg:pt-8 lg:pb-20">
 
           {/* Text for banner */}
-          <div className="text-center lg:text-left">
+          <motion.div initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { delay: 2, duration: 0.5, ease: "easeIn" }}} className="text-center lg:text-left">
             <span className="text-xl">
 
               <Typewriter words={['Frontend web Developer', 'Fullstack web Developer', 'JavaScript web Developer', 'React web Developer']} loop={0} cursor cursorStyle='|' typeSpeed={80} deleteSpeed={50} delaySpeed={1500} />
@@ -64,7 +67,7 @@ const Home = () => {
                 <Social />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* photo for banner */}
           <div className="my-8 lg:my-0">
