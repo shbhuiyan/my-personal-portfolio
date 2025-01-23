@@ -1,4 +1,3 @@
-// this "use client" use for usePathname hooks
 "use client";
 
 import { usePathname } from "next/navigation";

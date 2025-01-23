@@ -1,4 +1,3 @@
-// this "use client" use for usePathname hooks
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
